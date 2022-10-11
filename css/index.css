@@ -46,6 +46,12 @@ a:hover{
 	margin: 50px auto;
 	width:800px;
 }
+
+.fullscreen{
+	width: 100%;
+	height: 100%;
+}
+
 .playable{
 	width: 100%;
 	background: #222;
@@ -61,6 +67,29 @@ a:hover{
 	margin: 25px auto;
 	border: none;
 }
+
+#slider-container {
+	height: 100vh;
+	background-color: #0f779a;
+	overflow: hidden;
+}
+
+#slider {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+/* CSS transition applied when translation of items happen */
+.slider-transition {
+	transition: transform 0.7s ease-in-out;
+}
+
+.slider-item {
+	width: 100%;
+	flex-shrink: 0;
+}
+
 iframe[embedded]{
 	overflow: hidden;
 	border: none;
@@ -136,4 +165,10 @@ span[cartoon]:hover{
 	top:-20px;
 	left:140px;
 
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
 }
