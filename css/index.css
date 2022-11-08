@@ -69,9 +69,22 @@ a:hover{
 }
 
 #slider-container {
+	position: relative;
 	height: 100vh;
 	background-color: #0f779a;
 	overflow: hidden;
+}
+
+#forward-button {
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-100%, 0);
+}
+
+#backward-button {
+	position: absolute;
+	top: 50%;
 }
 
 #slider {
